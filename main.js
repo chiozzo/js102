@@ -1,7 +1,7 @@
 
 function sort_array (array){
-	var unsorted_array = array.sort();
-	return unsorted_array;
+	var sorted_array = array.sort();
+	return sorted_array;
 }
 
 function greater_than_25 (array){
@@ -26,6 +26,7 @@ function convert_input_to_array (){
 $("#get-values").click(function(){
 	var input_array = convert_input_to_array();
 	input_array = greater_than_25(input_array);
+	console.log(input_array);
 	input_array = sort_array(input_array);
 	console.log(input_array);
 	for (var i = 0; i < input_array.length; i++){
